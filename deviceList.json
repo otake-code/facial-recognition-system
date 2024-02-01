@@ -1,0 +1,49 @@
+{
+  "statusCode": 100,
+  "body": {
+    "deviceList": [
+      {
+        "deviceId": "C33832306225",
+        "deviceName": "Bot 1",
+        "deviceType": "Bot",
+        "enableCloudService": true,
+        "hubDeviceId": "EB81E677B9C1"
+      },
+      {
+        "deviceId": "E60E2E675BF4",
+        "deviceName": "ロック F4",
+        "deviceType": "Smart Lock",
+        "enableCloudService": true,
+        "hubDeviceId": "EB81E677B9C1"
+      },
+      {
+        "deviceId": "EB81E677B9C1",
+        "deviceName": "ハブミニ C1",
+        "deviceType": "Hub Mini",
+        "enableCloudService": true,
+        "hubDeviceId": "000000000000"
+      }
+    ],
+    "infraredRemoteList": [
+      {
+        "deviceId": "02-202308172257-49615754",
+        "deviceName": "エアコン",
+        "remoteType": "Air Conditioner",
+        "hubDeviceId": "EB81E677B9C1"
+      },
+      {
+        "deviceId": "02-202308172305-41690627",
+        "deviceName": "テレビ",
+        "remoteType": "DIY TV",
+        "hubDeviceId": "EB81E677B9C1"
+      },
+      {
+        "deviceId": "02-202308172306-69362096",
+        "deviceName": "ライト",
+        "remoteType": "Light",
+        "hubDeviceId": "EB81E677B9C1"
+      }
+    ]
+  },
+  "message": "success"
+}
