@@ -1,7 +1,7 @@
 import requests
 
 def line_notify(message,picture=None):
-    line_notify_token = 'mYGWm3KPrtHXQ8mTxkkbZfhWYccUeTXvcDQk6eFlxJX' #見守りサービス
+    line_notify_token = '' #見守りサービス
     line_notify_api = 'https://notify-api.line.me/api/notify'
     payload = {'message': message}
     headers = {'Authorization': 'Bearer ' + line_notify_token}
