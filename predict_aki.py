@@ -43,11 +43,6 @@ transform = transforms.Compose([
 onnx_model = onnx.load(model_name)
 ort_session = ort.InferenceSession(model_name)
 
-# 署名表示
-for prop in onnx_model.metadata_props:
-    if prop.key == "signature":
-        print(prop.value)
-
 # 入力名を取得
 input_name = onnx_model.graph.input[0].name
 
@@ -104,8 +99,8 @@ for image_file in image_files:
 # 成功した割合を計算
 success_ratio = success_count / total_count
 print("一致率 ={}%".format(success_ratio))
-# 1割以上成功していれば本人とみなす
-if success_ratio > 0:
+# 9割以上成功していれば本人とみなす
+if success_ratio > 90:
     picture=""
     print("高齢者である可能性が高いです。O") # perform_notification 関数を必要なパラメータで呼び出す
     perform_notification(picture) #LINEにおしらせ
