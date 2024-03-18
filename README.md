@@ -20,7 +20,7 @@
 
 1. このリポジトリをクローンします。
 ```
-git clone https://github.com/otake-code/jikken3_final.git
+git clone https://github.com/otake-code/facial-recognition-system.git
 ```
 2. 必要なPythonライブラリをインストールします。
 
