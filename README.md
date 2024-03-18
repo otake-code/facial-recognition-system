@@ -26,14 +26,19 @@ git clone https://github.com/otake-code/jikken3_final.git
 
 ## 使用方法
 1. LINE notifyとswitchbotのAPIを設定します
+
+2. 認証したい顔をベクトル化します
+```
+python embedding_arcface.py
+```
   
-2. `main.py`を実行します。
+3. 顔認証を実行します。
 ```
-python predict_arcface.py.py
+python predict_aki.py
 ```
-3. システムがカメラを起動し、顔を検知します。
-4. 指定された高齢者の顔との一致を判定します。
-5. 本人であれば、LINE通知が送信され、SWITCHBOTロックが施錠されます。
+4. システムがカメラを起動し、顔を検知します。
+5. 指定された高齢者の顔との一致を判定します。
+6. 本人であれば、LINE通知が送信され、SWITCHBOTロックが施錠されます。
 
 ## 今後の改善予定
 
